@@ -18,7 +18,6 @@ try {
             numbers[i] + numbers[j] + numbers[k]
           );
           console.log(numbers[i] * numbers[j] * numbers[k]);
-          return;
         }
       }
     }

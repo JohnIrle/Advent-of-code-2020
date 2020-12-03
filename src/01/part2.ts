@@ -1,11 +1,11 @@
-const fs = require("fs");
+import fs from "fs";
 
 try {
-  const data = fs.readFileSync("input.txt", "UTF-8");
+  const data = fs.readFileSync(__dirname + "/../../inputs/day1.txt", "utf8");
 
   const lines = data.split(/\r?\n/);
 
-  let numbers = [];
+  let numbers: number[] = [];
 
   lines.forEach((line) => numbers.push(parseInt(line)));
 
